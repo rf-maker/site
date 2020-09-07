@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+  {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+  }
+body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  background:#060a1f;  
+}
+@keyframes uoni {
+  0% {border:10px solid magenta; box-shadow:0 0 50px magenta;}
+  10% {border:10px solid purple; box-shadow:0 0 50px purple;}
+  20% {border:10px solid blue; box-shadow:0 0 50px blue;}
+  30% {border:10px solid aqua; box-shadow:0 0 50px aqua;}
+  40% {border:10px solid #0dfc91; box-shadow:0 0 50px #0dfc91;}
+  50% {border:10px solid #11fc0d; box-shadow:0 0 50px #11fc0d;}
+  60% {border:10px solid #99fc0d; box-shadow:0 0 50px #99fc0d;}
+  70% {border:10px solid #e8fc0d; box-shadow:0 0 50px #e8fc0d;}
+  80% {border:10px solid #fcd40d; box-shadow:0 0 50px #fcd40d;}
+  90% {border:10px solid #fca90d; box-shadow:0 0 50px #fca90d;}
+  100% {border:10px solid red; box-shadow:0 0 50px red;}
+  
+}
+.calculator{
+  position:relative;
+  display:grid;
+  border:10px solid magenta;
+  box-shadow:0 0 50px magenta;
+  animation-name:uoni;
+  animation-duration:10s;
+  animation-iteration-count:infinite;
+}
+@keyframes uoni2 {
+  0% {color:magenta; text-shadow:0 0 50px magenta;}
+  10% {color:purple; text-shadow:0 0 50px purple;}
+  20% {color:blue; text-shadow:0 0 50px blue;}
+  30% {color:aqua; text-shadow:0 0 50px aqua;}
+  40% {color:#0dfc91; text-shadow:0 0 50px #0dfc91;}
+  50% {color:#11fc0d; text-shadow:0 0 50px #11fc0d;}
+  60% {color:#99fc0d; text-shadow:0 0 50px #99fc0d;}
+  70% {color:#e8fc0d; text-shadow:0 0 50px #e8fc0d;}
+  80% {color:#fcd40d; text-shadow:0 0 50px #fcd40d;}
+  90% {color:#fca90d; text-shadow:0 0 50px #fca90d;}
+  100% {color:red; text-shadow:0 0 50px red;}
+  
+}
+.calculator .value{
+  grid-column: span 4;
+  height:300px;
+  width:800px;
+  text-align:right;
+  border:none;
+  outline:none;
+  padding:5px;
+  font-size:150px;
+  color:magenta;
+  text-shadow:0 0 50px magenta;
+  animation-name:uoni2;
+  animation-duration:10s;
+  animation-iteration-count:infinite;
+}
+
+.calculator span{
+  display:grid;
+  font-size:50px;
+  width:200px;
+  height:200px;
+  color:white;
+  background-image:linear-gradient(90deg,#0162c8,#55e7fc);
+  place-items:center;
+  border: 3px solid black;
+  animation-name:uoni4;
+  animation-duration:10s;
+  animation-iteration-count:infinite;
+}
+
+.calculator span:active{
+  background:white;
+  color:#111;
+  box-shadow:0 0 50px white;
+}
+p {
+  color: white;
+  font-size:25px;
+  border:10px solid magenta;
+  box-shadow:0 0 50px magenta;
+  height:1320px;
+  text-align:center;
+  animation-name:uoni;
+  animation-duration:10s;
+  animation-iteration-count:infinite;
+}
+@keyframes uoni22 {
+  0% {color:magenta; text-shadow:0 0 50px magenta;}
+  10% {color:purple; text-shadow:0 0 50px purple;}
+  20% {color:blue; text-shadow:0 0 50px blue;}
+  30% {color:aqua; text-shadow:0 0 50px aqua;}
+  40% {color:#0dfc91; text-shadow:0 0 50px #0dfc91;}
+  50% {color:#11fc0d; text-shadow:0 0 50px #11fc0d;}
+  60% {color:#99fc0d; text-shadow:0 0 50px #99fc0d;}
+  70% {color:#e8fc0d; text-shadow:0 0 50px #e8fc0d;}
+  80% {color:#fcd40d; text-shadow:0 0 50px #fcd40d;}
+  90% {color:#fca90d; text-shadow:0 0 50px #fca90d;}
+  100% {color:red; text-shadow:0 0 50px red;}
+  
+}
+#ff {
+   color: magenta;
+   text-shadow:0 0 50px magenta;
+   animation-name:uoni22;
+   animation-duration:10s;
+   animation-iteration-count:infinite;
+}
+.calculator span.clear{
+  grid-column: span 2;
+  width:400px;
+  background-image:linear-gradient(90deg,#755bea,#ff72c0);
+  color:white;
+}
+.calculator span.clear:active{
+  box-shadow:0 0 50px white;
+  background:white;
+  color:black;
+}
+.calculator span.plus{
+  grid-row: span 2;
+  height:400px;
+}
+.calculator span.equal{
+  background-image:linear-gradient(90deg,#755bea,#ff72c0);
+  color:white;
+}
+.calculator span.equal:active{
+  box-shadow:0 0 50px white;
+  color:black;
+  background:white;
+}
