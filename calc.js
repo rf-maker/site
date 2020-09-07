@@ -1,0 +1,1 @@
+alert('This is a calculator built for gamers by Arif Ali Khan')
